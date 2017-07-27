@@ -17,6 +17,7 @@ section.topSiteNav .right {
 section.topSiteNav .right .m-menu {
 	list-style: none;
 	position: relative;
+	
 }
 section.topSiteNav .right .m-menu li {
 	float: left;
@@ -123,14 +124,20 @@ section.topSiteNav .right .m-menu .last p {
 }
 /*topSiteNav导航条弹窗结束*/
 
+
 /*siteNav开始*/
 	/*头部部分*/
 	
+section.siteNav {
+	background: #FFFFFF;
+	/*box-shadow: 0 0 6px rgba(0,0,0,0.1);*/
+}
 section.siteNav .siteNav_hd {
 	height: 150px;
 	position: relative;
 }
 section.siteNav .siteNav_hd .mainLogo {
+	display: block;
 	position: absolute;
 	top: 50px;
 	left: 436px;
@@ -176,23 +183,26 @@ section.siteNav .siteNav_bd .tab_nav li .jq-slideDown {
 	position: absolute;
 	margin-left: -955px;
 	left: 50%;
-	top: 30px;
 	background: #FFFFFF;
 	display: none;
-	
 }
 section.siteNav .siteNav_bd .tab_nav>li {
+	margin-top: 10px;
 	float: left;
 	width: 88px; 
 	text-align: center;
 }
-section.siteNav .siteNav_bd .tab_nav>li a {
+section.siteNav .siteNav_bd .tab_nav>li.sep4 {
+	width: 2px;
+	font: 14px/28px "微软雅黑";
+}
+section.siteNav .siteNav_bd .tab_nav>li>a {
 	text-decoration: none;
 	font: 14px/30px "微软雅黑";
 	font-weight: 600;
 	color: #000000;
 }
-section.siteNav .siteNav_bd .tab_nav>li a.active {
+section.siteNav .siteNav_bd .tab_nav>li>a.active {
 	border-bottom: 2px solid #b4a078;
 }
 section.siteNav .siteNav_bd .tab_nav .jq-slideDown .sub_tab_nav {
@@ -211,10 +221,300 @@ section.siteNav .siteNav_bd .tab_nav .sub_tab_nav li {
 	text-align: center;
 }
 
-section.siteNav .siteNav_bd .tab_nav .sub_tab_nav li p.des {
-	font-weight: 800;
-	/*padding-top: 13px;*/
+section.siteNav .siteNav_bd .tab_nav .sub_tab_nav>li>a {
+	text-decoration: none;
+	color: #000000;
+}
+section.siteNav .siteNav_bd .tab_nav .sub_tab_nav>li>a p.des {
+	font-weight: 600;
 }
 section.siteNav .siteNav_bd .tab_nav .sub_tab_nav li a.active {
 	color: #b4a078;
+}
+
+
+
+/*浮动导航栏*/
+section.siteNav .j-siteNav {
+	width: 100%;
+	height: 60px;
+	background: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: auto;
+	display: none;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+	z-index: 50;
+	transition: all 2s ease;
+}
+section.siteNav .j-siteNav a {
+	text-decoration: none;
+}
+section.siteNav .j-siteNav .j-siteNavBox {
+	position: relative;
+	width: 1090px;
+	margin: 0 auto;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul {
+	position: relative;
+	margin-left: 156px;
+	float: left;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li {
+	float: left;
+	height: 60px;
+	width: 30px;
+}
+section.siteNav .j-siteNav .j-siteNavBox a.j-smallLogo {
+	display: block;
+	width: 105px;
+	height: 35px;
+	background: url(../img/yanxuan_logo_jingling.png) no-repeat 0 -70px;
+	margin-top: 13px;
+	float: left;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li a.j-personal {
+	display: block;
+	width: 20px;
+	height: 23px;
+	background: url(../img/yanxuan_logo_jingling.png) no-repeat 0 -206px;
+	margin-top: 17px;
+	float: left;
+	position: relative;
+}
+
+section.siteNav .j-siteNav .j-siteNavBox .j-personal-sub-menu:before {
+	content: '';
+	display: block;
+	width: 12px;
+	height: 6px;
+	background: url(../img/arrow.png) no-repeat 0 -469px;
+	position: absolute;
+	left: 30px;
+	top: -5px;
+	
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li a.j-personal:hover {
+	background: url(../img/yanxuan_logo_jingling.png) no-repeat 0 -175px;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li .j-personal-sub-menu {
+	display: none;
+	z-index: 51;
+	position: absolute;
+	top: 50px;
+	left: -25px;
+	border: 1px solid #DDDDDD;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	background: #FFFFFF;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li .j-personal-sub-menu li {
+	display: block;
+	margin: 3px 13px;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li .j-personal-sub-menu li:last-child {
+	border: none;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li .j-personal-sub-menu li a {
+	font: 12px/36px "微软雅黑";
+	width: 60px;
+	color: #999999;
+	margin: 0;
+	text-align: center;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li .j-personal-sub-menu li a:hover {
+	color: #b4a078;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li a.j-shoppingcart {
+	display: block;
+	width: 26px;
+	height: 22px;
+	background: url(../img/shoppingcart.png) no-repeat 0 -33px;
+	margin-top: 19px;
+	margin-left: 38px;
+	float: left;
+	position: relative;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li a.j-shoppingcart:hover {
+	display: block;
+	width: 26px;
+	height: 22px;
+	background: url(../img/shoppingcart.png) no-repeat 0 0;
+	margin-top: 19px;
+	margin-left: 38px;
+	float: left;
+}
+section.siteNav .j-siteNav .j-siteNavBox>ul>li a.j-shoppingcart span.bage {
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	width: 19px;
+	height: 19px;
+	background: #d4282d;
+	border-radius: 50%;
+	color: #FFFFFF;
+	text-align: center;
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav {
+	margin-left: 29px;
+	float: left;
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav li .jq-slideDown {
+	z-index: 113;
+	width: 1910px;
+	height: 210px;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+	position: absolute;
+	margin-left: -955px;
+	left: 50%;
+	top: 60px;
+	background: #FFFFFF;
+	display: none;
+	
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav>li {
+	float: left;
+	width: 68px; 
+	text-align: center;
+	height: 60px;
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav>li>a {
+	text-decoration: none;
+	font: 14px/60px "微软雅黑";
+	font-weight: 600;
+	color: #000000;
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav>li a.active {
+	border-bottom: 2px solid #b4a078;
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav .jq-slideDown .sub_tab_nav {
+	list-style: none;
+	width: 1090px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -545px;
+	/*display: none;*/
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav .sub_tab_nav li {
+	padding-top: 25px;
+	float: left;
+	width: 144px; 
+	text-align: center;
+}
+
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav .sub_tab_nav>li>a {
+	font: 12px/36px "微软雅黑";
+	color: #000000;
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav .sub_tab_nav>li>a p.des {
+	font-weight: 600;
+	
+}
+section.siteNav .j-siteNav .j-siteNavBox .tab_nav .sub_tab_nav li a.active {
+	color: #b4a078;
+}
+
+
+
+
+
+
+/*侧边栏*/
+aside div.asideBox {
+	position: fixed;
+	right: 0;
+	top: 360px;
+}
+aside div.asideBox ul {
+	width: 72px;
+	position: relative;
+	background: #FFFFFF;
+}
+aside div.asideBox ul li {
+	text-align: center;
+}
+
+aside div.asideBox ul li a {
+	text-decoration: none;
+	color: #666666;
+}
+aside div.asideBox ul li a:hover {
+	color: #b4a078;
+}
+aside div.asideBox ul li a p.gifts span.icon {
+	margin-top: 17px;
+	position: relative;
+	left: 50%;
+	margin-left: -15px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/new_jingling.png) no-repeat 0 -296px;
+}
+aside div.asideBox ul li a:hover p.gifts span.icon {
+	background: url(../img/new_jingling.png) no-repeat 0 -257px;
+}
+aside div.asideBox ul li a p {
+	font: 12px/38px "微软雅黑";
+	border-bottom: 1px solid #eaeaea;
+	margin: 0 6px;
+}
+aside div.asideBox ul li:first-child a p,
+aside div.asideBox ul li:last-child a p {
+	border: none;
+}
+aside div.asideBox ul li a p.downloadApp span.icon {
+	margin-top: 17px;
+	position: relative;
+	left: 50%;
+	margin-left: -10px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/new_jingling.png) no-repeat 0 -168px;
+}
+aside div.asideBox ul li a:hover p.downloadApp span.icon {
+	background: url(../img/new_jingling.png) no-repeat 0 -128px;
+}
+aside div.asideBox ul li a p.rss span.icon {
+	margin-top: 17px;
+	position: relative;
+	left: 50%;
+	margin-left: -10px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/new_jingling.png) no-repeat 0 -425px;
+}
+aside div.asideBox ul li a:hover p.rss span.icon {
+	background: url(../img/new_jingling.png) no-repeat 0 -389px;
+}
+
+aside div.asideBox ul li a p.customerService span.icon {
+	margin-top: 17px;
+	position: relative;
+	left: 50%;
+	margin-left: -16px;
+	display: block;
+	width: 32px;
+	height: 30px;
+	background: url(../img/new_jingling.png) no-repeat 0 -87px;
+}
+aside div.asideBox ul li a:hover p.customerService span.icon {
+	background: url(../img/new_jingling.png) no-repeat 0 -46px;
+}
+aside div.asideBox ul li a p.backTop span.icon {
+	margin-top: 17px;
+	position: relative;
+	left: 50%;
+	margin-left: -11px;
+	display: block;
+	width: 23px;
+	height: 15px;
+	background: url(../img/new_jingling.png) no-repeat 0 -234px;
+}
+aside div.asideBox ul li a:hover p.backTop span.icon {
+	background: url(../img/new_jingling.png) no-repeat 0 -208px;
 }

@@ -1,0 +1,87 @@
+section.bread ol{
+	position: relative;
+}
+section.bread ol li {
+	float: left;
+}
+section.bread  ol li a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 12px;
+	line-height: 52px;
+}
+section.bread ol li.active a {
+	color: #999999;
+}
+section.bread ol span.fa {
+	color: #999999;
+	font-size: 12px;
+	line-height: 52px;
+	padding: 0 10px;
+}
+
+/*basicDetail开始*/
+section.basicDetail .basicDetailLeft {
+	float: left;
+	margin-bottom: 30px;
+}
+section.basicDetail .basicDetailLeft .bigImgBox {
+	width: 430px;
+	height: 430px;
+	border: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	margin-right: 16px;
+	background: #f4f4f4;
+	float: left;
+}
+section.basicDetail .basicDetailLeft .smallImgBox {
+	position: relative;
+	float: left;
+}
+section.basicDetail .basicDetailLeft .smallImgBox li {
+	margin-bottom: 10px;
+	width: 76px;
+	height: 76px;
+	border: 1px solid #e8e8e8;
+	background: #f4f4f4;
+}
+section.basicDetail .basicDetailLeft .smallImgBox li img {
+	width: 76px;
+	height: 76px;
+}
+
+
+
+
+/*basicDetail结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

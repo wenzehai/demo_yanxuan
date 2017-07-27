@@ -1,0 +1,236 @@
+body {
+	background: #f5f5f5;
+}
+section.bread ol{
+	position: relative;
+}
+section.bread ol li {
+	float: left;
+}
+section.bread  ol li a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 12px;
+	line-height: 52px;
+}
+section.bread ol li.active a {
+	color: #999999;
+}
+section.bread ol span.fa {
+	color: #999999;
+	font-size: 12px;
+	line-height: 52px;
+	padding: 0 10px;
+}
+
+/*轮播开始*/
+section.categorySlide .categorySlideBox {
+	position: relative;
+	height: 310px;
+	overflow: hidden;
+}
+section.categorySlide .categorySlideBox .picCon {
+	position: relative;
+}
+section.categorySlide .categorySlideBox .picCon li {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+section.categorySlide .categorySlideBox img {
+	border: none;
+}
+section.categorySlide .categorySlideBox ol {
+	position: absolute;
+	left: 500px;
+	bottom: 10px;
+}
+section.categorySlide .categorySlideBox ol li {
+	float: left;
+	
+}
+section.categorySlide .categorySlideBox ol li span {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #bfbbba;
+	margin-right: 16px;
+	cursor: pointer;
+}
+section.categorySlide .categorySlideBox ol li span.active {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(0,0,0,0);
+	border: 2px solid #b7a582;
+	box-sizing: border-box;
+}
+section.categorySlide .categorySlideBox button {
+	background: #303030;
+	display: none;
+}
+section.categorySlide .categorySlideBox button:hover {
+	background: #b4a078;
+}
+section.categorySlide .categorySlideBox button#prev1 {
+	width: 40px;
+	height: 80px;
+	color: #FFFFFF;
+	font-size: 24px;
+	position: absolute;
+	top: 130px;
+	left: 10px;
+	outline: none;
+	border: none;
+}
+section.categorySlide .categorySlideBox button#next1 {
+	width: 40px;
+	height: 80px;
+	color: #FFFFFF;
+	font-size: 24px;
+	position: absolute;
+	top: 130px;
+	right: 10px;
+	outline: none;
+	border: none;
+}
+/*轮播结束*/
+
+/*主体开始*/
+section.main .container{
+	background: #FFFFFF;
+	margin-bottom: 80px;
+}
+section.main .categoryMenu {
+	margin-top: 30px;
+	padding: 10px 40px 0 40px;
+	position: relative;
+}
+section.main .categoryMenu .classify ul {
+	position: relative;
+	border-bottom: 1px dashed #dedede;
+}
+section.main .categoryMenu .sort ul {
+	position: relative;
+	border-bottom: 1px solid #dedede;
+}
+section.main .categoryMenu .classify ul li,
+section.main .categoryMenu .sort ul li {
+	float: left;
+	margin-right: 29px;
+	font: 12px/54px "微软雅黑";
+}
+section.main .categoryMenu .classify ul li:first-child,
+section.main .categoryMenu .sort ul li:first-child {
+	color: #999999;
+}
+section.main .categoryMenu .classify ul li a,
+section.main .categoryMenu .sort ul li a {
+	color: #000000;
+	text-decoration: none;
+}
+section.main .categoryMenu .classify ul li a.active,
+section.main .categoryMenu .sort ul li a.active {
+	color: #b4a078;
+}
+section.main .categoryMenu .classify ul li a:hover,
+section.main .categoryMenu .sort ul li a:hover {
+	color: #b4a078;
+}
+
+section.main .mainCon {
+	padding: 28px 40px 0 40px;
+	text-align: center;
+}
+section.main .mainCon:nth-child(2) .part .part_hd p.partTitle {
+	background: url(../img/icon/jujia/1.png) no-repeat 0 4px;
+}
+section.main .mainCon:nth-child(3) .part .part_hd p.partTitle {
+	background: url(../img/icon/jujia/2.png) no-repeat 0 4px;
+}
+section.main .mainCon:nth-child(4) .part .part_hd p.partTitle {
+	background: url(../img/icon/jujia/3.png) no-repeat 0 4px;
+}
+section.main .mainCon .part .part_hd p.partTitle {
+	font: 24px/50px "微软雅黑";
+	width: 200px;
+	padding-left: 60px;
+	font-weight: 800px;
+	position: relative;
+	left: 45%;
+	text-align: left;
+}
+section.main .mainCon .part .part_hd p.partDes {
+	font: 14px/38px "微软雅黑";
+	color: #999999;
+	margin-bottom: 31px;
+}
+section.main .mainCon .part .part_content ul{
+	position: relative;
+}
+section.main .mainCon .part .part_content ul li {
+	width: 245px;
+	height: 374px;
+	margin-right: 10px;
+	margin-bottom: 37px;
+	overflow: hidden;
+	float: left;
+}
+section.main .mainCon .part .part_content ul li:nth-child(4),
+section.main .mainCon .part .part_content ul li:nth-child(8),
+section.main .mainCon .part .part_content ul li:nth-child(12),
+section.main .mainCon .part .part_content ul li:nth-child(16) {
+	margin-right:0;
+}
+section.main .mainCon .part .part_content ul li .mask span.colorNum {
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	width: 53px;
+	height: 20px;
+	border-radius: 4px;
+	border: 1px solid #b19e7a;
+	background: #f4f0ea;
+	color: #b9936e;
+	z-index: 11;
+}
+section.main .mainCon .part .part_content ul li .mask a {
+	text-decoration: none;
+	color: #000000;
+}
+section.main .mainCon .part .part_content ul li .mask img {
+	background: #f4f4f4;
+	transition: all 2s ease;
+}
+.mask:hover img {
+	transform:scale(1.05);
+	-ms-transform:scale(1.05); /* IE 9 */
+	-moz-transform:scale(1.05); /* Firefox */
+	-webkit-transform:scale(1.05); /* Safari and Chrome */
+	-o-transform:scale(1.05); /* Opera */
+}
+section.main .mainCon .part .part_content ul li .mask .goodsTitle {
+	font: 14px/16px "微软雅黑";
+	font-weight: 600;
+	color: #000000;
+	margin-top: 34px;
+}
+section.main .mainCon .part .part_content ul li .mask .goodsPrice {
+	font: 14px/33px "微软雅黑";
+	color: #d4282d;
+	width: 130px;
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+	left: 50%;
+	margin-left: -65px;
+}
+
+section.main .mainCon .part .part_content ul li .mask .goodsDes {
+	font: 12px/48px "微软雅黑";
+	color: #999999;
+}
+
+
+/*主体结束*/

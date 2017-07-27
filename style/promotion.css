@@ -1,0 +1,11 @@
+img {
+	border: none;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+section a {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
